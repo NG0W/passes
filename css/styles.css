@@ -1,0 +1,237 @@
+@page {
+  margin: 0;
+  size: A4;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: "Arial", sans-serif;
+  background: #f5f5f5;
+}
+
+.boarding-pass {
+  width: 700px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  margin: 30px auto;
+  display: flex;
+  position: relative;
+}
+
+.main-section {
+  flex: 4;
+  position: relative;
+  background: linear-gradient(135deg, #003d82 0%, #0066cc 100%);
+  color: white;
+}
+
+.stub-section {
+  flex: 1;
+  background: white;
+  border-left: 2px dashed #ddd;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  background: #f1c832;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ryanair-logo {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.route-info {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.plane-icon {
+  font-size: 14px;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.passenger-flight {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.label {
+  font-size: 9px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.route-display {
+  text-align: center;
+  margin: 25px 0 15px;
+}
+
+.route-text {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.plane-symbol {
+  font-size: 20px;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gate-boarding {
+  text-align: center;
+}
+
+.gate-label {
+  font-size: 8px;
+  opacity: 0.8;
+}
+
+.gate-value {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.boarding-time {
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+.stub-content {
+  color: #333;
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+}
+
+.stub-header {
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 10px;
+  color: #f1c832;
+}
+
+.stub-route {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: #333;
+}
+
+.stub-info {
+  margin: 8px 0;
+}
+
+.stub-label {
+  font-size: 8px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.stub-value {
+  font-weight: bold;
+  color: #333;
+}
+
+.barcode-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  width: 60px;
+  height: 12px;
+  background: repeating-linear-gradient(
+    90deg,
+    #fff 0px,
+    #fff 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  margin-left: -30px;
+}
+
+.barcode-stub {
+  height: 20px;
+  background: repeating-linear-gradient(
+    90deg,
+    #000 0px,
+    #000 1px,
+    #fff 1px,
+    #fff 3px
+  );
+  margin: 10px 0;
+}
+
+.priority-indicators {
+  display: flex;
+  gap: 5px;
+  margin: 8px 0;
+}
+
+.priority-badge {
+  background: #ff6b35;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.fast-track-badge {
+  background: #28a745;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.baggage-info {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 5px 0;
+}
